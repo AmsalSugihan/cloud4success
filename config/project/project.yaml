@@ -1,0 +1,65 @@
+dateModified: 1657295206
+elementSources:
+  craft\elements\Entry:
+    -
+      key: '*'
+      type: native
+    -
+      key: singles
+      type: native
+    -
+      heading: Channels
+      type: heading
+    -
+      key: 'section:b2ea844f-e1dc-4538-a97d-a57a34bf1afe' # Software Post
+      type: native
+    -
+      key: 'section:f87ff7ae-50ba-4e06-a75e-899fdc075507' # Blog Post
+      type: native
+    -
+      disabled: false
+      key: 'section:b79a9ca5-e9d0-4e18-ad37-b38ee786a341' # Stories Post
+      tableAttributes:
+        - postDate
+        - expiryDate
+        - link
+      type: native
+email:
+  fromEmail: admin@mail.com
+  fromName: cloud4success
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    0d358e98-2829-44be-a4f1-978b41d2f0aa: Software # Software
+    3da196e2-18bf-4d1d-b323-c31fe0330c82: 'Stories Post' # Stories Post
+    47ef9959-a528-4bd5-bd2d-c068e5248ae7: 'Karriere Post' # Karriere Post
+    59f2d7a3-cddc-441d-b150-0e18e523e267: 'Stories Overview' # Stories Overview
+    69d2ba66-2d6a-48f3-b8cc-0850d42e2c18: 'Blog Post' # Blog Post
+    7557a405-b2c2-48b3-8ab2-c99ea0fb0885: 'Karriere Overview' # Karriere Overview
+    16018a5d-e00b-488a-acca-11cd315f32dc: cloud4success # cloud4success
+    33732ef7-8cf5-46e3-a85d-565e9c838e3d: cloud4success # cloud4success
+    299609db-9eef-4aff-bcd8-5a92efda1dbb: Home # Home
+    aa851b3e-e45e-4c23-8c3b-e540929c28fe: 'Stories Overview' # Stories Overview
+    b2ea844f-e1dc-4538-a97d-a57a34bf1afe: 'Software Post' # Software Post
+    b20b7ca8-6027-4f7f-a320-95ab24bc0b22: 'Karriere Post' # Karriere Post
+    b79a9ca5-e9d0-4e18-ad37-b38ee786a341: 'Stories Post' # Stories Post
+    da7f3bc1-4533-411c-a8db-8637e8ca2282: 'Blog Overview' # Blog Overview
+    dd2cab1f-d433-4267-bf6a-52fbb391b10f: Common # Common
+    e0c0b0fa-c719-49dc-9c62-cfe77e3a05b2: Home # Home
+    e2192567-c6db-4e5b-99f3-be24ed73f518: 'Software Overview'
+    ebe57e47-0c3e-420b-a5f2-f74dca7bb6ed: 'Blog Overview' # Blog Overview
+    f0c8f2e7-dfeb-4a2b-a663-c1f3742952c4: 'Karriere Overview' # Karriere Overview
+    f87ff7ae-50ba-4e06-a75e-899fdc075507: 'Blog Post' # Blog Post
+    f5515f40-8f50-4d87-82f2-f2ea5e7ab68d: 'Software Overview'
+system:
+  edition: solo
+  live: true
+  name: cloud4success
+  schemaVersion: 4.0.0.9
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

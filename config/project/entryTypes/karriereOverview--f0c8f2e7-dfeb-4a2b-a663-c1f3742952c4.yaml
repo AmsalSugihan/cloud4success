@@ -1,0 +1,43 @@
+fieldLayouts:
+  db5594fb-0c00-4d15-9ec1-91845af66403:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 68e37647-2601-47c9-a9a8-b00bfa73e2ae
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 522503e9-9cd3-4d1b-819e-d042c411f58e
+        userCondition: null
+handle: karriereOverview
+hasTitleField: false
+name: 'Karriere Overview'
+section: 7557a405-b2c2-48b3-8ab2-c99ea0fb0885 # Karriere Overview
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

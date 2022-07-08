@@ -1,0 +1,43 @@
+fieldLayouts:
+  68618d42-f000-4174-a6e4-3c7a57957a71:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 31813845-d94e-4fce-a55d-6f5fc62c2901
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e62071ac-d41c-49f2-b15c-e357fe845628
+        userCondition: null
+handle: blogPost
+hasTitleField: true
+name: 'Blog Post'
+section: f87ff7ae-50ba-4e06-a75e-899fdc075507 # Blog Post
+sortOrder: 1
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

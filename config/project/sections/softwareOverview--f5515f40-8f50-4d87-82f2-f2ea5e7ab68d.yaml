@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: softwareOverview
+name: 'Software Overview'
+propagationMethod: all
+siteSettings:
+  33732ef7-8cf5-46e3-a85d-565e9c838e3d: # cloud4success
+    enabledByDefault: true
+    hasUrls: true
+    template: _/software/index
+    uriFormat: software
+type: single
