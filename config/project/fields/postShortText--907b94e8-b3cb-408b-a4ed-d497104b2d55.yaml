@@ -1,0 +1,19 @@
+columnSuffix: fdqywyjz
+contentColumnType: text
+fieldGroup: dd2cab1f-d433-4267-bf6a-52fbb391b10f # Common
+handle: postShortText
+instructions: null
+name: 'Post Short Text'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 2
+  multiline: true
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

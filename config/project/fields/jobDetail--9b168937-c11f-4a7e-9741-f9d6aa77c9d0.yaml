@@ -1,0 +1,58 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 68486210-b568-4359-8c37-732c21e7518c # Job
+handle: jobDetail
+instructions: null
+name: 'Job Detail'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 2021789422
+  columns:
+    __assoc__:
+      -
+        - 2855e71a-4ab6-45e5-b716-fe4cfc071f33 # Location
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 9583ec6a-d404-475a-8632-f57bf1d4aa04 # Duration
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 4c833b87-8963-49bf-b039-fb9029ebcfa6 # Experience
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - e9361ffe-b7e5-47e5-b505-06837d3a9487 # Start Date
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 26f05fc1-ee8e-4be8-95cb-ee95fc0ba4ea # Button
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_jobdetail}}'
+  fieldLayout: row
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: true
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

@@ -30,6 +30,71 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 3cfc0ef4-6ff2-433b-a452-2d40f9bc5988 # Author Entry
+            instructions: null
+            label: Author
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0ae8fffe-1e76-418a-8739-c825e5c1c889
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 5477467a-150b-4bea-ad59-e1f19719c73f # Blog Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fad486d3-7feb-49e0-bb2c-9425571b227f
+            userCondition: null
+            warning: null
+            width: 50
+          -
+            elementCondition: null
+            fieldUid: 293cac4b-bd6e-4c92-98ca-eb719b885cda # Post Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5c02408c-6456-41d0-a228-8a4af28a446f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: be50f99b-b84e-45d6-99c6-9b79e5c52560 # Post Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 346fa6e4-218a-4df8-8d89-c767ef229279
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 604ca2bf-8e8a-4f42-878c-d934ee7b6400
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: 170b0e9a-f69f-46c0-810f-b14d6378d6fe # Post Rich Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 49f3857d-c84c-4ada-873e-8fd94ab29d8d
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: e62071ac-d41c-49f2-b15c-e357fe845628
         userCondition: null

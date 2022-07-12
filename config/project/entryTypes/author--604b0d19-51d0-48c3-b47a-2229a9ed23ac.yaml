@@ -1,5 +1,5 @@
 fieldLayouts:
-  8b30de7d-f43a-4240-900e-89c2530695cc:
+  de1e2454-6452-4650-8ad5-1b3c69f654ca:
     tabs:
       -
         elementCondition: null
@@ -26,29 +26,41 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: d58fa3d6-2039-436d-8e6a-eb1e7925814a
+            uid: 6f9fa017-6e9f-430a-9e1b-f77c10390bdb
             userCondition: null
             warning: null
             width: 100
           -
             elementCondition: null
-            fieldUid: c969cea5-b5b1-408f-a797-8806df0c5402 # Post Banner
+            fieldUid: 530023de-e527-4210-9215-b3e3099b4402 # Author Name
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 87978fb4-2526-4c02-8d8e-054d27bf7209
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 913d328b-09f7-4108-8816-f81c35cb7d2a # Author Image
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6dec60c9-941f-4da4-ac45-a03f9eb70d0c
+            uid: 7a39dadd-8427-4f5e-ba53-2f7ff56e0028
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 47860d54-e544-44b6-90ec-0674f2ec5274
+        uid: dd3cf48b-73e9-4e5f-8e7d-9f55239f4dbf
         userCondition: null
-handle: storiesOverview
+handle: author
 hasTitleField: false
-name: 'Stories Overview'
-section: aa851b3e-e45e-4c23-8c3b-e540929c28fe # Stories Overview
+name: Author
+section: 8032f6af-316d-418e-ab60-c0ce3c7f60f9 # Author
 sortOrder: 1
 titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null

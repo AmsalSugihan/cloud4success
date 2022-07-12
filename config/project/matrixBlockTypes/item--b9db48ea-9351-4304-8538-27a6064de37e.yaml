@@ -1,0 +1,73 @@
+field: 26f05fc1-ee8e-4be8-95cb-ee95fc0ba4ea # Button
+fieldLayouts:
+  ca610aa8-2000-44d8-888b-870461256cf3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 39a78532-3890-491b-bacb-c9efe356997a # Title Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: adcf3f43-99ab-4c44-b838-284e8a37661a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2505b2b0-2821-445f-a8cc-a6c902395ae1 # Url Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 59aa8233-f3e7-40b7-b65d-595dc54f393d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 067d3f36-0088-4a60-b283-e10ce1996b98
+        userCondition: null
+fields:
+  39a78532-3890-491b-bacb-c9efe356997a: # Title Button
+    columnSuffix: rjdlnmli
+    contentColumnType: text
+    fieldGroup: null
+    handle: titleButton
+    instructions: null
+    name: 'Title Button'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  2505b2b0-2821-445f-a8cc-a6c902395ae1: # Url Button
+    columnSuffix: xukdyhkz
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: urlButton
+    instructions: null
+    name: 'Url Button'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+handle: item
+name: Item
+sortOrder: 1

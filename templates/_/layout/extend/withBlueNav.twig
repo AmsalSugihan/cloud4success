@@ -1,0 +1,24 @@
+{% extends ("_/layout/mainBase") %}
+
+{% block extend %}
+
+<div class="overflow-hidden">
+  <div class="homepage-secondary-nav">
+    <img src="images/icon_schule.svg" loading="lazy" alt="" class="secondary-nav-power-icon" />
+    <div>Teams macht Schule.</div>
+    <a data-w-id="3706ad1a-4128-ddc7-97fe-ec92f18e7208" href="unternehmen/teams-macht-schule.html" class="secondary-nav-link w-inline-block">
+      <div>Jetzt kostenlose Unterstützung erhalten.</div>
+      <img src="images/vector_1.svg" loading="lazy" alt="" class="user-action-link-arrow" />
+    </a>
+  </div>
+
+  {% include ("_/layout/navigation/nav") %}
+  
+  {% block content %} 
+  {% endblock %}
+
+  {% include ("_/layout/navigation/footer") %} 
+  <div class="sticky-nav-div">{% include ("_/layout/navigation/nav") %}</div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends ("_/layout/secondaryBase") %}
+
+{% block extend %}
+<div class="page-wrapper">
+    <div class="integrations-hero-section wf-section">
+        {% include ("_/layout/navigation/nav") %} 
+        {% block header %} 
+        
+        {% endblock %}
+    </div>
+  
+    {% block content %} 
+    {% endblock %}
+
+    {% include ("_/layout/navigation/footer") %}
+</div>
+
+{% endblock %}

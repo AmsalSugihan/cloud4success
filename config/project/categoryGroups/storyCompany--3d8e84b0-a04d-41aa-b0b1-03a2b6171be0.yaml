@@ -1,5 +1,6 @@
+defaultPlacement: end
 fieldLayouts:
-  3e74c7a0-4653-4b3a-8dd0-8570c00bad86:
+  28f4a090-57ea-4653-98f6-fab29d52f692:
     tabs:
       -
         elementCondition: null
@@ -25,19 +26,21 @@ fieldLayouts:
             step: null
             tip: null
             title: null
-            type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: 6f5927b5-f231-4aee-9a3b-8e72b7031635
+            type: craft\fieldlayoutelements\TitleField
+            uid: 848ffc28-6460-4116-a010-bd866c152b29
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 4e1c9cb6-9342-462c-8be6-a5ff6da0e384
+        uid: 4037bfb7-db8f-4339-aff1-52426cc001a7
         userCondition: null
-handle: softwareOverview
-hasTitleField: false
-name: 'Software Overview'
-section: f5515f40-8f50-4d87-82f2-f2ea5e7ab68d # Software Overview
-sortOrder: 1
-titleFormat: '{section.name|raw}'
-titleTranslationKeyFormat: null
-titleTranslationMethod: site
+handle: storyCompany
+name: 'Story Company'
+siteSettings:
+  33732ef7-8cf5-46e3-a85d-565e9c838e3d: # cloud4success
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 351669bc-e7a8-4c52-997f-f9579865c970
