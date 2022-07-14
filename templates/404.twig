@@ -1,0 +1,15 @@
+{% extends ("_/layout/mainBase") %}
+
+{% block extend %}
+    {% include ("_/layout/navigation/nav") %}
+
+    <div class="_404-section wf-section">
+        <div class="wrapper _404-wrapper">
+            <h6 class="subheading">404</h6>
+            <h1 class="_404-heading">Seite nicht gefunden</h1>
+            <a href="#" class="button dark-blue w-button">Zurück zur Startseite</a>
+        </div>
+    </div>
+
+    {% include ("_/layout/navigation/footer") %}
+{% endblock %}

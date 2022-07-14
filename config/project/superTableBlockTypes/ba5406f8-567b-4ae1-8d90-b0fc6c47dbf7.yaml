@@ -13,7 +13,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 6b9e0e32-f7f5-4650-b809-489a1e8b7b11
+            uid: d1b9aeff-68de-445b-94b5-72744f7fee36
             userCondition: null
             warning: null
             width: 100
@@ -25,7 +25,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 36fbca25-4dfa-4a1c-8f3a-707f451df117
+            uid: a0c15a39-4e27-442e-b869-ea895e9c6011
             userCondition: null
             warning: null
             width: 100
@@ -37,7 +37,7 @@ fieldLayouts:
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
-            uid: 44b08bf3-ab86-4b39-be1e-f3aa0e793ae3
+            uid: 46526c46-4a44-42c4-8fa4-07a3f529bad2
             userCondition: null
             warning: null
             width: 100
@@ -54,31 +54,60 @@ fields:
     name: 'Button Url'
     searchable: false
     settings:
-      allowSelfRelations: false
-      localizeRelations: false
-      maxRelations: 1
-      minRelations: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Entry
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\entries\EntryCondition
-      selectionLabel: null
-      showSiteMenu: true
-      source: null
-      sources: '*'
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: null
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: 'Jetzt lesen'
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
     translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Entries
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
   7d14fb5f-7ea2-4695-95f7-923c9bbd3fb8: # Headline
     columnSuffix: null
     contentColumnType: text

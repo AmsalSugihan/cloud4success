@@ -1,0 +1,78 @@
+{% extends './_/layout/extend/noStickyNav' %}
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
+{% block header %}
+
+    <div class="wrapper contact-hero-wrapper">
+        <h6 data-w-id="5c8ce3c1-e029-0a1f-26bb-f6174eb824f6" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="subheading">Kontakt</h6>
+        <h1 data-w-id="e3e19479-40d2-e449-8019-cfb24a11e3ee" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="contact-hero-heading">Wir freuen uns auf Ihre Nachricht!</h1>
+        <div data-w-id="588ec67f-4a57-2963-c6b5-5066b3dbf2ef" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="contact-hero-text">Wir steigern die Produktivität und verbessern die Zusammenarbeit in einer digitalen Welt.</div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+    <div data-w-id="2df2b7ca-d1c7-c87e-4eac-c12d5a3f1bf6" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="wrapper contact-form-wrapper">
+        <div class="contact-form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="post" class="contact-form">
+                <div class="contact-form-row">
+                    <div class="contact-form-item up"><label for="name" class="contact-form-field-label contact-page">Name</label><input type="text" class="contact-form-text-field w-input" maxlength="256" name="name" data-name="Name" placeholder="Christine Cloud" id="name" required=""></div>
+                    <div class="contact-form-item"><label for="email" class="contact-form-field-label contact-page">E-Mail</label><input type="email" class="contact-form-text-field w-input" maxlength="256" name="email" data-name="Email" placeholder="christine.cloud@mail.de" id="email" required=""></div>
+                </div>
+                <div class="contact-form-row">
+                    <div class="contact-form-item up"><label for="Company-Name" class="contact-form-field-label contact-page">Firma</label><input type="text" class="contact-form-text-field w-input" maxlength="256" name="Company-Name" data-name="Company Name" placeholder="Wolken GmbH" id="Company-Name" required=""></div>
+                    <div class="contact-form-item"><label for="Phone" class="contact-form-field-label contact-page">Telefon</label><input type="tel" class="contact-form-text-field w-input" maxlength="256" name="Phone" data-name="Phone" placeholder="01234 567890" id="Phone" required=""></div>
+                </div><label for="Message" class="contact-form-field-label contact-page">Ihre Nachricht</label><textarea placeholder="Was können wir für Sie tun?" maxlength="5000" id="Message" name="Message" required="" data-name="Message" class="contact-form-text-area w-input"></textarea><input type="submit" value="Nachricht senden" data-wait="Bitte warten" class="button dark-blue submit w-button">
+            </form>
+            <div class="success-message w-form-done">
+                <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="error-message w-form-fail">
+                <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+        </div>
+        <div class="contact-cards-container">
+            <div class="contact-card-item up"><img src="{{siteUrl}}assets/images/Logo-5_1Logo-5.png" loading="lazy" alt="" class="contact-card-icon">
+                <h4 class="contact-card-heading">E-Mail schreiben</h4>
+                <div>
+                    <a href="mailto:info@cloud4success.de" class="contact-card-link">info@cloud4success.de</a>
+                </div>
+            </div>
+            <div class="contact-card-item"><img src="{{siteUrl}}assets/images/Logo-4_1Logo-4.png" loading="lazy" alt="" class="contact-card-icon">
+                <h4 class="contact-card-heading">Anrufen</h4>
+                <div>
+                    <a href="tel:+498954198912" class="contact-card-link">+49 89 54198912</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="location-section wf-section">
+        <div class="wrapper location-wrapper">
+            <div class="location-left">
+                <h6 data-w-id="f168d81a-5851-a168-4ca2-1f3770e30600" class="subheading">Vor Ort</h6>
+                <h2 data-w-id="658e6ceb-baba-173b-2263-3a594f24136f" class="location-heading">Unsere Büros</h2>
+                <div data-w-id="6814acda-b4f5-d7fc-1ba2-3da33fe630c3">An unseren Standorten nehmen wir Sie gerne in Empfang.</div>
+                <div class="location-item"><img src="{{siteUrl}}assets/images/Group-81.svg" loading="lazy" alt="" class="location-icon">
+                    <div class="location-item-details">
+                        <div><span class="bold-text-span black">München: <br></span>Mies-van-der-Rohe Str. 6<br>80807 München</div>
+                    </div>
+                </div>
+                <div class="location-item"><img src="{{siteUrl}}assets/images/Group-81.svg" loading="lazy" alt="" class="location-icon">
+                    <div class="location-item-details">
+                        <div><span class="bold-text-span black">Hof:<br></span>Sonnenplatz 4<br>95028 Hof</div>
+                    </div>
+                </div>
+                <div class="location-item"><img src="{{siteUrl}}assets/images/Group-81.svg" loading="lazy" alt="" class="location-icon">
+                    <div class="location-item-details">
+                        <div><span class="bold-text-span black">Schönwald:<br></span>Hauptstr. 20<br>95173 Schönwald</div>
+                    </div>
+                </div>
+            </div>
+            <div class="location-images-container"><img src="{{siteUrl}}assets/images/image_location1.jpg" loading="lazy" srcset="{{siteUrl}}assets/images/image_location1-p-500.jpeg 500w, {{siteUrl}}assets/images/image_location1.jpg 690w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 42vw, (max-width: 991px) 40vw, (max-width: 1439px) 25vw, 345px" alt="" class="location-image"><img src="{{siteUrl}}assets/images/image_location2.jpg" loading="lazy" srcset="{{siteUrl}}assets/images/image_location2-p-500.jpeg 500w, {{siteUrl}}assets/images/image_location2.jpg 690w" sizes="(max-width: 479px) 90vw, (max-width: 767px) 42vw, (max-width: 991px) 40vw, (max-width: 1439px) 25vw, 345px" alt="" class="location-image"></div>
+        </div>
+    </div>
+
+    {% include('_/components/ctaSection') %}
+
+{% endblock %}

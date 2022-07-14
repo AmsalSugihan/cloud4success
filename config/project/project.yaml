@@ -1,4 +1,4 @@
-dateModified: 1657651281
+dateModified: 1657810646
 elementSources:
   craft\elements\Entry:
     -
@@ -26,7 +26,11 @@ elementSources:
       key: 'section:b20b7ca8-6027-4f7f-a320-95ab24bc0b22' # Karriere Post
       type: native
     -
+      disabled: false
       key: 'section:b2ea844f-e1dc-4538-a97d-a57a34bf1afe' # Software Post
+      tableAttributes:
+        - postDate
+        - link
       type: native
     -
       disabled: false
@@ -52,6 +56,7 @@ meta:
   __names__:
     0d358e98-2829-44be-a4f1-978b41d2f0aa: Software # Software
     1d7dc4a5-fcb3-477b-93d2-0adc9b88ccb6: 'Button Url' # Button Url
+    2ad0f005-f573-4862-a07f-bf5258f7107b: 'Impressum & Datenschutz' # Impressum & Datenschutz
     2d382c82-c0eb-47c2-b9f6-05fd84e03045: 'Title Button' # Title Button
     3cfc0ef4-6ff2-433b-a452-2d40f9bc5988: 'Author Entry' # Author Entry
     3d8e84b0-a04d-41aa-b0b1-03a2b6171be0: 'Story Company' # Story Company
@@ -63,9 +68,12 @@ meta:
     8bbb286a-ac71-4e2a-8a91-3dbff9e26b3d: 'Software Category' # Software Category
     9b168937-c11f-4a7e-9741-f9d6aa77c9d0: 'Job Detail' # Job Detail
     26f05fc1-ee8e-4be8-95cb-ee95fc0ba4ea: Button # Button
+    36e73792-074d-4ef8-ab4e-a2efc6ad90d4: 'Modern Workplace' # Modern Workplace
     39a78532-3890-491b-bacb-c9efe356997a: 'Title Button' # Title Button
     47ef9959-a528-4bd5-bd2d-c068e5248ae7: 'Karriere Post' # Karriere Post
     59f2d7a3-cddc-441d-b150-0e18e523e267: 'Stories Overview' # Stories Overview
+    62bd963d-2296-4faa-b53a-80a39499b6ad: 'Modern Workplace' # Modern Workplace
+    62f883e4-2069-4014-a684-6dffb7e09607: Contact # Contact
     69d2ba66-2d6a-48f3-b8cc-0850d42e2c18: 'Blog Post' # Blog Post
     72e1ba88-7b1d-4682-804e-9e8fd8099292: Author # Author
     082ff081-aa3c-4188-afaf-1de984461e85: 'Company Category' # Company Category
@@ -86,10 +94,12 @@ meta:
     299609db-9eef-4aff-bcd8-5a92efda1dbb: Home # Home
     392575c9-9499-499c-b0cf-491dbb63a798: 'Blog Category' # Blog Category
     530023de-e527-4210-9215-b3e3099b4402: 'Author Name' # Author Name
+    701103d9-8214-446d-83e8-9db864a6a593: Beratung # Beratung
     874730fc-5e59-488f-a579-29b8a3f524d0: 'Url Button' # Url Button
     5477467a-150b-4bea-ad59-e1f19719c73f: 'Blog Category' # Blog Category
     68486210-b568-4359-8c37-732c21e7518c: Job # Job
     a86f6dff-5be9-4f49-9232-841c9b5d8dda: Link # Link
+    a242b979-f049-4865-9696-fb87e39d1a0c: 'Impressum & Datenschutz' # Impressum & Datenschutz
     aa851b3e-e45e-4c23-8c3b-e540929c28fe: 'Stories Overview' # Stories Overview
     b2c25602-4953-49fc-a0ce-8fdac961d57b: Title # Title
     b2ea844f-e1dc-4538-a97d-a57a34bf1afe: 'Software Post' # Software Post
@@ -102,17 +112,21 @@ meta:
     c1d9166e-5308-4e91-9bf1-5618717bdcd8: 'Sofware Category' # Sofware Category
     c969cea5-b5b1-408f-a797-8806df0c5402: 'Post Banner' # Post Banner
     cae04bf8-01a2-4040-b9cc-6584b31aaaae: 'Content Assets' # Content Assets
+    d0c9a98d-03f6-4647-8c8d-4971d91c23b3: Contact # Contact
+    d99048a1-a158-4b8e-bc5b-2e5c739a3985: Beratung # Beratung
     da7f3bc1-4533-411c-a8db-8637e8ca2282: 'Blog Overview' # Blog Overview
     dd2cab1f-d433-4267-bf6a-52fbb391b10f: Common # Common
     e0c0b0fa-c719-49dc-9c62-cfe77e3a05b2: Home # Home
     e1d6a3d2-955b-42e4-bcf0-ae40fbffba4f: 'Content Post' # Content Post
     e7a73574-4ac1-440a-9ecd-60810b7d4f02: Text # Text
+    e495b10a-245e-4b45-8085-f55ca3e033e5: Support # Support
     e9361ffe-b7e5-47e5-b505-06837d3a9487: 'Start Date' # Start Date
     e2192567-c6db-4e5b-99f3-be24ed73f518: 'Software Overview' # Software Overview
     ebe57e47-0c3e-420b-a5f2-f74dca7bb6ed: 'Blog Overview' # Blog Overview
     f0c8f2e7-dfeb-4a2b-a663-c1f3742952c4: 'Karriere Overview' # Karriere Overview
     f87ff7ae-50ba-4e06-a75e-899fdc075507: 'Blog Post' # Blog Post
     f5515f40-8f50-4d87-82f2-f2ea5e7ab68d: 'Software Overview' # Software Overview
+    f6404666-341b-4af9-ad83-c96ed1be86fe: Support # Support
 plugins:
   redactor:
     edition: standard

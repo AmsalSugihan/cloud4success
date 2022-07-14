@@ -1,0 +1,38 @@
+{% set softwareList = craft.entries().section('softwarePost').limit(9).all() %}
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
+<div class="most-popular-integration-section wf-section">
+    <div class="wrapper most-popular-integrations-wrapper">
+        <div class="most-popular-integrations-up">
+            <div class="most-popular-integrations-headings">
+                <h6 data-w-id="ed6f905b-dc71-31a2-3f60-e674c655763f" class="subheading">Die tools im überblick</h6>
+                <h2 data-w-id="ed6f905b-dc71-31a2-3f60-e674c6557641">Cloud.<br>Ganz sicher.</h2>
+            </div>
+            <div data-w-id="ed6f905b-dc71-31a2-3f60-e674c6557645" class="most-popular-integrations-text">
+                <div data-w-id="ed6f905b-dc71-31a2-3f60-e674c6557646">Agilität und Zusammenarbeit im Unternehmen
+                    freisetzen und ungeahnte Potentiale Nutzen. Der optimale digitale Arbeitsplatz.
+                </div>
+            </div>
+        </div>
+        <div data-w-id="ed6f905b-dc71-31a2-3f60-e674c6557648" class="most-integrations-down">
+            <div class="integration-collection">
+                {% for list in softwareList %}
+                    {% set image = list.postImage.one() ? list.postImage.one().url : defaultImg %}
+                    <div class="integration-item">
+                        <a href="{{ list.url }}" class="integration-card most-popular w-inline-block">
+                            <div class="integration-icon flex"><img src="{{ image }}" loading="lazy" alt=""
+                                                                    class="integration-logo-small"/></div>
+                            <h4 class="integration-item-heading">{{ list.postBanner.headline }}</h4>
+                            <div>{{ list.postBanner.shortText }}</div>
+                            <div class="integration-card-link">
+                                <img src="{{ siteUrl }}assets/images/Icon.svg" loading="lazy" width="13" alt=""
+                                     class="integration-card-link-icon"/>
+                                <div>Mehr dazu</div>
+                            </div>
+                        </a>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>

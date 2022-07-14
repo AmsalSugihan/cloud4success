@@ -1,0 +1,28 @@
+{% set softwareList = craft.entries().section('softwarePost').limit(8).all() %}
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
+<div class="features-loop-section wf-section">
+    <div data-w-id="31234da6-116f-6e01-aa9a-0e0e8a9065e9"
+         style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+         class="wrapper features-loop-wrapper">
+        <div data-w-id="3ba31075-b811-106e-da1d-ae9e36faaf4e" class="features-loop-inside-wrapper _1">
+            {% for list in softwareList|slice(0, 4) %}
+                {{  _self.listSoftware(list) }}
+            {% endfor %}
+        </div>
+        <div data-w-id="781e5bec-9f73-1143-a176-a03c0a7db49f" class="features-loop-inside-wrapper _2">
+            {% for list in softwareList|slice(4, 8) %}
+                {{  _self.listSoftware(list) }}
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% macro listSoftware(list) %}
+    {% set image = list.postImage.one() ? list.postImage.one().url : defaultImg %}
+    <div class="features-cards">
+        <div class="features-card-icon"><img src="{{ image }}" loading="lazy" alt="" class="image contain"></div>
+        <h4 class="featues-card-heading">{{ list.postBanner.headline }}</h4>
+        <div>{{ list.postBanner.shortText }}</div>
+    </div>
+{% endmacro %}

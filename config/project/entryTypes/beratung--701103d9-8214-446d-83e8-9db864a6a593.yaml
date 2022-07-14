@@ -1,0 +1,67 @@
+fieldLayouts:
+  2f6e63ef-4612-4685-8d19-e30e84cfa2e3:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 1972982c-6f26-4d6b-837c-5a3e38b974c8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 293cac4b-bd6e-4c92-98ca-eb719b885cda # Post Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 65d710f3-7620-4a96-9bed-408e2744b966
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 907b94e8-b3cb-408b-a4ed-d497104b2d55 # Post Short Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1700688a-f0f5-41fd-a628-f56f2e7cc184
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 63fbf33d-1d7c-41b8-859e-5ecc0d59e82a
+        userCondition: null
+handle: beratung
+hasTitleField: false
+name: Beratung
+section: d99048a1-a158-4b8e-bc5b-2e5c739a3985 # Beratung
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

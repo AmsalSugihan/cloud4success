@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: contact
+name: Contact
+propagationMethod: all
+siteSettings:
+  33732ef7-8cf5-46e3-a85d-565e9c838e3d: # cloud4success
+    enabledByDefault: true
+    hasUrls: true
+    template: _\unternehmen\contact
+    uriFormat: unternehmen/kontakt
+type: single

@@ -1,3 +1,6 @@
+{% set softwareList = craft.entries().section('softwarePost').limit(3).all() %}
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
 <div class="most-popular-integration-section wf-section">
   <div class="wrapper most-popular-integrations-wrapper">
     <div class="most-popular-integrations-up">
@@ -11,39 +14,20 @@
     </div>
     <div data-w-id="2d1faa5e-4d88-f056-ef0c-6edfb8ee9487" class="most-integrations-down">
       <div class="integration-collection">
-        <div class="integration-item">
-          <a href="#" class="integration-card most-popular w-inline-block">
-            <div class="integration-icon flex"><img src="{{siteUrl}}assets/images/icon_office.png" loading="lazy" alt="" class="integration-logo-small" /></div>
-            <h4 class="integration-item-heading">Office</h4>
-            <div>Die bekannten Office-Anwendungen von Word bis PowerPoint.</div>
-            <div class="integration-card-link">
-              <img src="{{siteUrl}}assets/images/Icon.svg" loading="lazy" width="13" alt="" class="integration-card-link-icon" />
-              <div>Mehr dazu</div>
-            </div>
-          </a>
-        </div>
-        <div class="integration-item">
-          <a href="#" class="integration-card most-popular w-inline-block">
-            <div class="integration-icon flex"><img src="{{siteUrl}}assets/images/icon_outlook.png" loading="lazy" alt="" class="integration-logo-small" /></div>
-            <h4 class="integration-item-heading">Outlook</h4>
-            <div>E-Mails, Kontakte und Kalender an einem Ort.</div>
-            <div class="integration-card-link">
-              <img src="{{siteUrl}}assets/images/Icon.svg" loading="lazy" width="13" alt="" class="integration-card-link-icon" />
-              <div>Mehr dazu</div>
-            </div>
-          </a>
-        </div>
-        <div class="integration-item">
-          <a href="#" class="integration-card most-popular w-inline-block">
-            <div class="integration-icon flex"><img src="{{siteUrl}}assets/images/icon_sharepoint.png" loading="lazy" alt="" class="integration-logo-small" /></div>
-            <h4 class="integration-item-heading">SharePoint</h4>
-            <div>Teilen und verwalten von Inhalten, Know-How und vielem mehr.</div>
-            <div class="integration-card-link">
-              <img src="{{siteUrl}}assets/images/Icon.svg" loading="lazy" width="13" alt="" class="integration-card-link-icon" />
-              <div>Mehr dazu</div>
-            </div>
-          </a>
-        </div>
+        {% for list in softwareList %}
+          {% set image = list.postImage.one() ? list.postImage.one().url : defaultImg %}
+          <div class="integration-item">
+            <a href="{{ list.url }}" class="integration-card most-popular w-inline-block">
+              <div class="integration-icon flex"><img src="{{ image }}" loading="lazy" alt="" class="integration-logo-small" /></div>
+              <h4 class="integration-item-heading">{{ list.title }}</h4>
+              <div>{{ list.postBanner.shortText }}</div>
+              <div class="integration-card-link">
+                <img src="{{siteUrl}}assets/images/Icon.svg" loading="lazy" width="13" alt="" class="integration-card-link-icon" />
+                <div>Mehr dazu</div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
       </div>
     </div>
   </div>

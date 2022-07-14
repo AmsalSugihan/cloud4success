@@ -9,4 +9,7 @@ siteSettings:
     hasUrls: true
     template: _/software/entry
     uriFormat: 'm365/{slug}'
-type: channel
+structure:
+  maxLevels: 1
+  uid: 19f2dbbe-ef61-4ec6-a763-a9681a4985f1
+type: structure

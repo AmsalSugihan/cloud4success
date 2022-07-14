@@ -4,11 +4,11 @@
 
 <div class="overflow-hidden">
   <div class="homepage-secondary-nav">
-    <img src="images/icon_schule.svg" loading="lazy" alt="" class="secondary-nav-power-icon" />
+    <img src="{{siteUrl}}assets/images/icon_schule.svg" loading="lazy" alt="" class="secondary-nav-power-icon" />
     <div>Teams macht Schule.</div>
-    <a data-w-id="3706ad1a-4128-ddc7-97fe-ec92f18e7208" href="unternehmen/teams-macht-schule.html" class="secondary-nav-link w-inline-block">
+    <a data-w-id="3706ad1a-4128-ddc7-97fe-ec92f18e7208" href="{{ craft.entries.section('modernWorkplace').one().url|default('#') }}" class="secondary-nav-link w-inline-block">
       <div>Jetzt kostenlose Unterstützung erhalten.</div>
-      <img src="images/vector_1.svg" loading="lazy" alt="" class="user-action-link-arrow" />
+      <img src="{{siteUrl}}assets/images/vector_1.svg" loading="lazy" alt="" class="user-action-link-arrow" />
     </a>
   </div>
 

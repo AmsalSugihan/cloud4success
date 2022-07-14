@@ -1,0 +1,73 @@
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+{% set blog = craft.entries().section('blogPost').limit(3).all() %}
+{% set blogOverviewUrl = craft.entries().section('blogOverview').one().url %}
+{% set author = blog[0].authorEntry.one() ?? '' %}
+{% set authImg = author.authorImage.one().url ?? defaultImg %}
+
+<div class="home-blog-section wf-section">
+    <div class="wrapper home-blog-wrapper">
+        <div class="home-blog-heading-and-button">
+            <div class="blog-heading-and-subheading">
+                <h6 data-w-id="bbae8966-bbfd-fd68-d8f3-b44eff46fc68" class="blog-subheading">blog</h6>
+                <h2 data-w-id="bbae8966-bbfd-fd68-d8f3-b44eff46fc6a" class="home-blog-heading h2-60-px">Neuigkeiten und
+                    Einblicke.</h2>
+            </div>
+            <a data-w-id="bbae8966-bbfd-fd68-d8f3-b44eff46fc6c" href="{{ blogOverviewUrl }}" class="button w-button">Mehr
+                Einträge lesen</a>
+        </div>
+        <div data-w-id="bbae8966-bbfd-fd68-d8f3-b44eff46fc6e" class="home-blogs-container">
+            <div id="w-node-_33767e7c-ac5d-52b3-d8f1-a88765e6ccf0-ff46fc64" class="featured-main-collection-wrapper">
+                <div class="featured-main-collection-item">
+                    <a href="#" class="featured-main-item w-inline-block">
+                        <div class="featured-main-image">
+                            <img src="{{ blog[0].postImage.one() ? blog[0].postImage.one().url : defaultImg }}"
+                                 loading="lazy" alt="" class="image"/>
+                            <div class="overlay"></div>
+                        </div>
+                        <div class="featured-author">
+                            <div class="featured-author-image"><img src="{{ authImg }}" loading="lazy" alt=""
+                                                                    class="image"/></div>
+                            <h5 class="white">{{ author.authorName }}</h5>
+                        </div>
+                        <div class="feature-down">
+                            <div class="featured-category">{{ blog[0].blogCategory.one() ? blog[0].blogCategory.one().title }}</div>
+                            <h4 class="white">{{ blog[0].postHeadline|default(blog[0].title) }}</h4>
+                            <div class="featrued-date-and-time">
+                                <div class="white">{{ blog[0].postDate | date("M d, Y") }}</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div id="w-node-_7b66eca4-c8cb-d3c8-1163-fb37ba6d021e-ff46fc64" class="featured-collection-wrapper">
+                <div class="feature-collection-list _2">
+                    {% for item in blog[1:] %}
+                        {% set author = item.authorEntry.one() ?? '' %}
+                        {% set authImg = author.authorImage.one().url ?? defaultImg %}
+                        <div class="feature-collection-item">
+                            <a href="#" class="feature-item w-inline-block">
+                                <div class="feature-image">
+                                    <img src="{{ item.postImage.one() ? item.postImage.one().url : defaultImg }}"
+                                         loading="lazy" alt="" class="image"/>
+                                    <div class="overlay"></div>
+                                </div>
+                                <div class="featured-author">
+                                    <div class="featured-author-image"><img src="{{ authImg }}" loading="lazy" alt=""
+                                                                            class="image"/></div>
+                                    <h5 class="white">{{ author.authorName }}</h5>
+                                </div>
+                                <div class="feature-down">
+                                    <div class="featured-category">{{ item.blogCategory.one() ? item.blogCategory.one().title }}</div>
+                                    <h4 class="white">{{ item.postHeadline|default(item.title) }}</h4>
+                                    <div class="featrued-date-and-time">
+                                        <div class="white">{{ item.postDate | date("M d, Y") }}</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+{% extends './_/layout/extend/noStickyNav' %}
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
+{% block header %}
+
+    <div data-w-id="cb191b58-4855-e4c9-dacc-3400677b4e10" class="wrapper about-hero-up">
+        <h6 class="subheading">Support &amp; hilfe</h6>
+        <h1 class="features-hero-heading">Persönlich. Unkompliziert.</h1>
+        <div class="about-hero-text">Sie benötigen Hilfe? Wenden Sie sich einfach an uns.</div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+    <div data-w-id="81923352-8c6f-9054-2c38-d12d16689ceb" class="download-cards-section wf-section">
+        <div class="wrapper download-cards-wrapper">
+            <div class="download-card-wrapper"><img src="{{siteUrl}}assets/images/image_support1.png" loading="lazy" alt="" class="download-image">
+                <h4 class="download-card-heading">TeamViewer</h4>
+                <div>Einfach per Fernwartung Hilfe erhalten.</div>
+                <a href="https://get.teamviewer.com/6iy4u2e" target="_blank" class="download-card-links w-inline-block">
+                    <div>Herunterladen</div><img src="{{siteUrl}}assets/images/Group-9.svg" loading="lazy" alt="" class="featured-learn-more-arrow down">
+                    <div class="features-learn-more-link-line-2"></div>
+                </a>
+            </div>
+            <div class="download-card-wrapper"><img src="{{siteUrl}}assets/images/image_support2.png" loading="lazy" alt="" class="download-image">
+                <h4 class="download-card-heading">Kontakt</h4>
+                <div>Nehmen Sie Kontakt zu uns auf. Wir kümmern uns.</div>
+                <a href="{{ craft.entries().section('contact').one().url }}" class="download-card-links w-inline-block">
+                    <div>Kontakt aufnehmen</div><img src="{{siteUrl}}assets/images/Group-9.svg" loading="lazy" alt="" class="featured-learn-more-arrow">
+                    <div class="features-learn-more-link-line-2"></div>
+                </a>
+            </div>
+            <div class="download-card-wrapper"><img src="{{siteUrl}}assets/images/image_support3.png" loading="lazy" alt="" class="download-image">
+                <h4 class="download-card-heading">Microsoft Support</h4>
+                <div>Schnell nach der passenden Lösung suchen.</div>
+                <a href="https://support.microsoft.com/de-de" target="_blank" class="download-card-links w-inline-block">
+                    <div>Zum Microsoft-Support</div><img src="{{siteUrl}}assets/images/Group-9.svg" loading="lazy" alt="" class="featured-learn-more-arrow">
+                    <div class="features-learn-more-link-line-2"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="feature-4-section download-feature-section wf-section">
+        <div class="wrapper feature-4-wrapper">
+            <div class="feature-4-left">
+                <h6 data-w-id="a3b6c72b-2023-224d-039e-f0f2b70abbd1" class="subheading">Cloud? Klar!</h6>
+                <h2 data-w-id="a3b6c72b-2023-224d-039e-f0f2b70abbd3" class="h2-60-px">Mehr als gute Gründe.</h2>
+                <div data-w-id="a3b6c72b-2023-224d-039e-f0f2b70abbd5" class="features-4-text">Die Herausforderung einer modernen Arbeitsumgebung spiegeln sich auch in der Wahl der passenden Softwarelösung wieder. Warum also nicht auf den Anbieter setzen, der universell und einfach in bestehende Prozesse integriert werden kann?</div>
+            </div>
+            <div class="pointer-grid">
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_devices.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div class="feature-text-download">Greifen Sie unterwegs auf Daten zu.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_safe.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Ihre Daten sind sicher.Sehr sicher.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_save.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div class="feature-text-download">Sparen Sie Betriebskosten unnötiger Infrastruktur.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_sync.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Immer und überall die neuesten Versionen.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_chat.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Jederzeit in Verbindung bleiben.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_person.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Unkompliziert und sicher Freigeben.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include('_/components/ctaSection') %}
+
+{% endblock %}

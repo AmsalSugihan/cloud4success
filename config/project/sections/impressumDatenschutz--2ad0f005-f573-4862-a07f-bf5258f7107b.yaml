@@ -1,0 +1,12 @@
+defaultPlacement: end
+enableVersioning: true
+handle: impressumDatenschutz
+name: 'Impressum & Datenschutz'
+propagationMethod: all
+siteSettings:
+  33732ef7-8cf5-46e3-a85d-565e9c838e3d: # cloud4success
+    enabledByDefault: true
+    hasUrls: true
+    template: _\unternehmen\impressum
+    uriFormat: unternehmen/impressum-datenschutz
+type: single

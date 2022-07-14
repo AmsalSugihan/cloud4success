@@ -1,0 +1,105 @@
+{% extends './_/layout/extend/withStickyNav' %}
+
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+{% set image = entry.postImage.one() ? entry.postImage.one().url : defaultImg %}
+
+{% block header %}
+
+    <div data-w-id="dfc54cd4-4b94-e522-8665-11a76a70e62f" class="wrapper">
+        <div class="blog-wrapper">
+            <div data-w-id="b2aaf975-31ff-5bee-5a17-f3c4547b4bf8" class="left-text-contain blog-page-3">
+                <h1 class="case-study-hero-heading">{{ entry.postHeadline }}</h1>
+                <div class="cs-hero-paragraph">{{ entry.postShortText }}</div>
+                <div class="author-info">
+                    <div class="blog-date">{{ entry.postDate | date("M d, Y") }}</div>
+                </div>
+                <a data-w-id="b2aaf975-31ff-5bee-5a17-f3c4547b4c06" href="{{ entry.button }}"
+                   class="read-more-link w-inline-block">
+                    <div>{{ entry.button ? entry.button.getCustomText() : 'Jetzt lesen' }}</div>
+                    <img src="{{ siteUrl }}assets/images/Group-9.svg" loading="lazy" alt=""
+                         class="featured-learn-more-arrow"/>
+                    <div class="features-learn-more-link-line-2"></div>
+                </a>
+            </div>
+            <div data-w-id="b2aaf975-31ff-5bee-5a17-f3c4547b4c0b" class="blog-image-contain"><img
+                        src="{{ image }}" loading="lazy" alt="" class="blog-image-page-3"/></div>
+        </div>
+    </div>
+
+{% endblock %} 
+
+{% block content %}
+
+    {% set blog = craft.entries().section('blogPost').limit(9).all() %}
+
+    <div data-w-id="748b7df3-9ebc-b10b-4056-48b7b03ef6bd" class="blog-subscribe-section blog-3 wf-section">
+        <div class="wrapper blog-subscribe-wrapper">
+            <div class="blog-subscribe-left">
+                <h2 class="blog-subscribe-heading">Neuigkeiten direkt per Mail</h2>
+                <div class="_22-px white">Jetzt zum cloud4success Newsletter anmelden.</div>
+            </div>
+            <div class="blog-subscribe-form-container">
+                <div class="cta-form-block w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form" method="get" class="cta-form"><input
+                                type="email" class="cta-form-field blog-subscribe w-input" maxlength="256"
+                                name="Email-6" data-name="Email 6" placeholder="E-Mail Adresse" id="Email-6"
+                                required=""><input type="submit" value="Abonnieren" data-wait="Please wait..."
+                                                   class="button navigation-button show w-button"></form>
+                    <div class="success-message w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="error-message w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-w-id="bd01f59d-c24f-7b0b-27ff-d970a8dedbeb" class="blog-main-wrapper">
+        <div class="wrapper reviews">
+            <h2 class="case-study-heading">Alle Blog-Einträge</h2>
+            <div class="review-paragraph center">Insights und Neuigkeiten rund um Microsoft 365.</div>
+            <div class="blog-content-page-3">
+                <div class="collection-list-wrapper">
+                    <div class="collection-list">
+                        {% for block in blog %}
+                            {% set image = block.postImage.one() ? block.postImage.one().url : defaultImg %}
+                            {% set author = block.authorEntry.one() ?? '' %}
+                            {% set authImg = author.authorImage.one().url ?? defaultImg %}
+
+                            <div class="blog-item-page-3">
+                                <a href="{{ block.url }}" class="blog-item w-inline-block">
+                                    <div class="blog-up">
+                                        <div class="blog-image blog-page-3">
+                                            <img loading="lazy" src="{{ image }}" alt="" class="image">
+                                            <div class="blog-author">
+                                                <div class="featured-author-image">
+                                                    <img loading="lazy"
+                                                         src="{{ authImg }}"
+                                                         alt="" class="image"></div>
+                                                <h5 class="white">{{ author.authorName }}</h5>
+                                            </div>
+                                            <div class="overlay r"></div>
+                                        </div>
+                                        <h6 class="blog-category">{{ block.blogCategory.one() ? block.blogCategory.one().title }}</h6>
+                                        <h4>{{ block.postHeadline|default(block.title) }}</h4>
+                                    </div>
+                                    <div class="blog-down">
+                                        <div class="blog-date-and-time">
+                                            <div>{{ block.postDate|date("M d, Y") }}</div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include('_/components/ctaSection') %}
+
+{% endblock %}
