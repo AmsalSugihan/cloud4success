@@ -18,7 +18,7 @@
         <div data-w-id="bbae8966-bbfd-fd68-d8f3-b44eff46fc6e" class="home-blogs-container">
             <div id="w-node-_33767e7c-ac5d-52b3-d8f1-a88765e6ccf0-ff46fc64" class="featured-main-collection-wrapper">
                 <div class="featured-main-collection-item">
-                    <a href="#" class="featured-main-item w-inline-block">
+                    <a href="{{blog[0].url}}" class="featured-main-item w-inline-block">
                         <div class="featured-main-image">
                             <img src="{{ blog[0].postImage.one() ? blog[0].postImage.one().url : defaultImg }}"
                                  loading="lazy" alt="" class="image"/>
@@ -45,7 +45,7 @@
                         {% set author = item.authorEntry.one() ?? '' %}
                         {% set authImg = author.authorImage.one().url ?? defaultImg %}
                         <div class="feature-collection-item">
-                            <a href="#" class="feature-item w-inline-block">
+                            <a href="{{item.url}}" class="feature-item w-inline-block">
                                 <div class="feature-image">
                                     <img src="{{ item.postImage.one() ? item.postImage.one().url : defaultImg }}"
                                          loading="lazy" alt="" class="image"/>

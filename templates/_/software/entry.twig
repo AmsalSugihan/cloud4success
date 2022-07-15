@@ -5,7 +5,7 @@
 {% block header %}
     <div class="wrapper integrations-details-wrapper">
         <div class="integration-name-wrapper">
-            <h6 class="subheading">{{ craft.app.request.getSegment(2) == 'microsoft-teams' or 'teams-macht-schule' ? 'Microsoft Teams' : 'Microsoft 365/Office' }}</h6>
+            <h6 class="subheading">{{ craft.app.request.getSegment(2) == 'microsoft-teams' or craft.app.request.getSegment(2) == 'teams-macht-schule' ? 'Microsoft Teams' : 'Microsoft 365/Office' }}</h6>
         </div>
         <div class="integration-heading-wrapper">
             <h1 class="integrations-hero-heading template">{{ entry.postBanner.headline }}</h1>
