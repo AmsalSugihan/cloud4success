@@ -1,0 +1,44 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: dd2cab1f-d433-4267-bf6a-52fbb391b10f # Common
+handle: postBanner
+instructions: null
+name: 'Post Banner'
+searchable: false
+settings:
+  blockTypeFields: 0
+  changedFieldIndicator: 105007311
+  columns:
+    __assoc__:
+      -
+        - 7d14fb5f-7ea2-4695-95f7-923c9bbd3fb8 # Headline
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 987bd29f-6646-4a74-958b-01ebb601675b # Short Text
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+      -
+        - 1d7dc4a5-fcb3-477b-93d2-0adc9b88ccb6 # Button Url
+        -
+          __assoc__:
+            -
+              - width
+              - ''
+  contentTable: '{{%stc_postbanner}}'
+  fieldLayout: matrix
+  maxRows: null
+  minRows: null
+  propagationKeyFormat: null
+  propagationMethod: all
+  selectionLabel: null
+  staticField: true
+translationKeyFormat: null
+translationMethod: site
+type: verbb\supertable\fields\SuperTableField

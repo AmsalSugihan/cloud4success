@@ -13,7 +13,7 @@ fieldLayouts:
             elementCondition: null
             id: null
             instructions: null
-            label: null
+            label: 'Job Title'
             max: null
             min: null
             name: null
@@ -27,6 +27,65 @@ fieldLayouts:
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
             uid: a7070c80-d28e-4411-b002-c66c303aaf4f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 907b94e8-b3cb-408b-a4ed-d497104b2d55 # Post Short Text
+            instructions: null
+            label: 'Job Short Description'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a5d6cf65-f477-489e-9d8b-c350ab1e6992
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9b168937-c11f-4a7e-9741-f9d6aa77c9d0 # Job Detail
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 15d9140e-4e2d-49f3-b5ab-db6c2f4e5da2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Detail
+        uid: 3dc77005-6609-4184-bd64-98878386d1a3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7acc60ca-d954-466f-9d9c-79ecb579ed62 # Button
+            instructions: null
+            label: 'Information Button'
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f374c463-6ea3-4f56-a496-541fe1ea6f7d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            type: craft\fieldlayoutelements\HorizontalRule
+            uid: 3f9eec28-e55f-4b2a-b464-6fd4df96bf0f
+            userCondition: null
+          -
+            elementCondition: null
+            fieldUid: e1d6a3d2-955b-42e4-bcf0-ae40fbffba4f # Content Post
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ca635acf-95a5-4164-8262-ec2aadf68caa
             userCondition: null
             warning: null
             width: 100

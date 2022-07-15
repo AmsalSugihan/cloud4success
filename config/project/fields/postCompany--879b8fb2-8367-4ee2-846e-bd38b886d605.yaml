@@ -1,0 +1,25 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: dd2cab1f-d433-4267-bf6a-52fbb391b10f # Common
+handle: postCompany
+instructions: null
+name: 'Post Company'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: 1
+  localizeRelations: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: false
+  source: 'group:3d8e84b0-a04d-41aa-b0b1-03a2b6171be0' # Story Company
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

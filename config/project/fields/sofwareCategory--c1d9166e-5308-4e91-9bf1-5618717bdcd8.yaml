@@ -1,0 +1,25 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: dd2cab1f-d433-4267-bf6a-52fbb391b10f # Common
+handle: sofwareCategory
+instructions: null
+name: 'Sofware Category'
+searchable: false
+settings:
+  allowLimit: false
+  allowMultipleSources: false
+  allowSelfRelations: false
+  branchLimit: 1
+  localizeRelations: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showSiteMenu: false
+  source: 'group:8bbb286a-ac71-4e2a-8a91-3dbff9e26b3d' # Software Category
+  sources: '*'
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Categories

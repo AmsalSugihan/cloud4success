@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  28f4a090-57ea-4653-98f6-fab29d52f692:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 848ffc28-6460-4116-a010-bd866c152b29
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4037bfb7-db8f-4339-aff1-52426cc001a7
+        userCondition: null
+handle: storyCompany
+name: 'Story Company'
+siteSettings:
+  33732ef7-8cf5-46e3-a85d-565e9c838e3d: # cloud4success
+    hasUrls: false
+    template: null
+    uriFormat: null
+structure:
+  maxLevels: 1
+  uid: 351669bc-e7a8-4c52-997f-f9579865c970

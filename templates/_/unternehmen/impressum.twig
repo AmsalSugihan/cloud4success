@@ -1,0 +1,47 @@
+{% extends './_/layout/extend/noStickyNav' %}
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
+{% block header %}
+
+    <div class="wrapper integrations-details-wrapper">
+        <div class="integration-heading-wrapper">
+            <h1 class="integrations-hero-heading template">Impressum &amp;<br>Datenschutz</h1>
+        </div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="integrations-detail-content wf-section">
+        <div class="integartions-detail-wrapper">
+            <div data-w-id="e21e9b13-eb55-a469-85da-878c1db6079a" class="sticky-detail-section">
+                <div class="progress-bar">
+                    <div class="progress-bar-grey-line">
+                        <div class="progress-bar-blue-line"></div>
+                    </div>
+                    {% for block in entry.contentPost.all() %}
+                        {% if block.type == 'items' %}
+                            <a href="#{{ block.titleText }}" class="progress-bar-item w-inline-block">
+                                <div>{{ block.titleText }}</div>
+                            </a>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+                <div class="detail-rich-text">
+                    <div class="integration-content w-richtext">
+                        {% for block in entry.contentPost.all() %}
+                            {% if block.type == 'items' %}
+                                <h4 id="{{ block.titleText }}">{{ block.titleText }}</h4>
+                                {{ block.descriptions|raw }}
+                            {% endif %}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include('_/components/ctaSection') %}
+
+{% endblock %}

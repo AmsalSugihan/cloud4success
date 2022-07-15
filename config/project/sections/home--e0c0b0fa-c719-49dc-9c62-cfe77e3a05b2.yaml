@@ -7,6 +7,6 @@ siteSettings:
   33732ef7-8cf5-46e3-a85d-565e9c838e3d: # cloud4success
     enabledByDefault: true
     hasUrls: true
-    template: _/index
+    template: _/base/index
     uriFormat: __home__
 type: single

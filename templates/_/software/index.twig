@@ -1,0 +1,93 @@
+{% extends './_/layout/extend/withStickyNav' %}
+
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
+{% block header %}
+
+    <div class="wrapper features-hero-wrapper">
+        <h6 data-w-id="c51a7c97-b343-204c-8425-7f8e9ca8aa1c" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">Microsoft 365</h6>
+        <h1 data-w-id="87f0b24a-8f58-af31-f39e-a365f9b2c17b" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="features-hero-heading">Mehr erreichen und in Kontakt bleiben.</h1>
+        <div data-w-id="74d9b813-a9ed-4f27-29db-c9566772e0fd" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="features-hero-text">Egal ob klassische Office-Anwendungen, E-Mails oder anspruchsvolle Anwendungen. Produktivität neu definiert.</div>
+    </div>
+
+{% endblock %}
+
+{% block content %}
+
+    {% include('_/components/softwareLoopSection') %}
+
+    <div data-w-id="2b85d44a-e677-573f-93c0-7e773b45cf50" class="blog-subscribe-section wf-section">
+        <div class="wrapper blog-subscribe-wrapper">
+            <div class="blog-subscribe-left">
+                <h2 class="blog-subscribe-heading">Nicht sicher, welches Tool das richtige ist?</h2>
+            </div>
+            <div class="blog-subscribe-form-container">
+                <a href="{{ craft.entries.section('beratung').one().url|default('#') }}" class="button navigation-button show w-button">Beratung anfordern</a>
+            </div>
+        </div>
+    </div>
+
+    {% include('_/components/mostPopularsSection') %}
+
+    <div id="Features-1" class="home-featured-1-section wf-section">
+        <div class="wrapper home-feature-1-wrapper homepage-3">
+            <div data-w-id="7edce06e-5ecd-da8d-e9c1-452946dbb79e" class="home-features-images-container">
+                <div class="home-features-1-main-image"><img src="{{siteUrl}}assets/images/feature_image.jpg" loading="lazy" alt="" class="image contain"></div>
+                <div class="features-1-floating _1"><img src="{{siteUrl}}assets/images/feature_office.png" loading="lazy" alt="" class="image contain"></div>
+                <div class="features-1-floating _2"><img src="{{siteUrl}}assets/images/feature_sharepoint.png" loading="lazy" alt="" class="image contain"></div>
+                <div class="features-1-floating _3"><img src="{{siteUrl}}assets/images/feature_teams.png" loading="lazy" alt="" class="image contain"></div>
+            </div>
+            <div class="home-feature-1-content">
+                <h6 data-w-id="7edce06e-5ecd-da8d-e9c1-452946dbb7a8" class="subheading">Modern Workplace Techstack</h6>
+                <h2 data-w-id="7edce06e-5ecd-da8d-e9c1-452946dbb7aa" class="home-features-heading">Überall zusammen arbeiten.</h2>
+                <div data-w-id="7edce06e-5ecd-da8d-e9c1-452946dbb7ac">Neue Herausforderungen und stetiger Wandel. Immer das beste für Zusammenarbeit und Kommunikation.</div>
+                <div data-w-id="7edce06e-5ecd-da8d-e9c1-452946dbb7ae" class="home-features-pointers-wrapper">
+                    <div class="home-features-pointer-item">
+                        <div class="home-features-pointer-icon"><img src="{{siteUrl}}assets/images/Group-11.svg" loading="lazy" alt="" class="image contain"></div>
+                        <div><span class="bold-text-span">Produktiv</span> Mit den Tools von Microsoft 365 arbeiten Sie gemeinsam mit ihren Mitarbeiter:innen produktiv an Projekten.</div>
+                    </div>
+                    <div class="home-features-pointer-item">
+                        <div class="home-features-pointer-icon"><img src="{{siteUrl}}assets/images/Group-11.svg" loading="lazy" alt="" class="image contain"></div>
+                        <div><span class="bold-text-span">Unabhängig</span> Der Arbeitsplatz von heute ist nicht mehr nur der Schreibtisch im Büro. Überall Zugriff auf die wichtigsten Ressourcen.</div>
+                    </div>
+                </div>
+                <a data-w-id="7edce06e-5ecd-da8d-e9c1-452946dbb7bd" href="{{ craft.entries.section('modernWorkplace').one().url|default('#') }}" class="features-learn-more-link-2 w-inline-block">
+                    <div>Mehr dazu</div><img src="{{siteUrl}}assets/images/Group-9.svg" loading="lazy" alt="" class="featured-learn-more-arrow">
+                    <div class="features-learn-more-link-line-2"></div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="feature-4-section homepage-3 wf-section">
+        <div class="wrapper feature-4-wrapper">
+            <div class="feature-4-left">
+                <h6 data-w-id="05a865cd-cf5d-5035-2aaa-0cc710294d1a" class="subheading">Cloud? Klar!</h6>
+                <h2 data-w-id="05a865cd-cf5d-5035-2aaa-0cc710294d1c" class="h2-60-px">Mehr als gute Gründe.</h2>
+                <div data-w-id="05a865cd-cf5d-5035-2aaa-0cc710294d1e" class="features-4-text">Die Herausforderung einer modernen Arbeitsumgebung spiegeln sich auch in der Wahl der passenden Softwarelösung wieder. Warum also nicht auf den Anbieter setzen, der universell und einfach in bestehende Prozesse integriert werden kann?</div>
+            </div>
+            <div class="pointer-grid">
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_devices.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div class="feature-text-download">Greifen Sie unterwegs auf Daten zu.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_safe.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Ihre Daten sind sicher.Sehr sicher.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_save.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div class="feature-text-download">Sparen Sie Betriebskosten unnötiger Infrastruktur.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_sync.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Immer und überall die neuesten Versionen.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_chat.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Jederzeit in Verbindung bleiben.</div>
+                </div>
+                <div class="pointer-grid-item"><img src="{{siteUrl}}assets/images/icon_person.svg" loading="lazy" alt="" class="pointer-icon">
+                    <div>Unkompliziert und sicher Freigeben.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include('_/components/ctaSection') %}
+
+{% endblock %}

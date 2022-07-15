@@ -1,0 +1,67 @@
+fieldLayouts:
+  2a984276-d609-480c-b6e2-966cec3dad8c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e691d958-f748-4402-916c-f647c7424277
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 293cac4b-bd6e-4c92-98ca-eb719b885cda # Post Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1eb767b3-0b66-41a9-89ef-1383952ac4a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 907b94e8-b3cb-408b-a4ed-d497104b2d55 # Post Short Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c9d72ecc-d788-42b9-b627-9907d0e3dac5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 8a886982-bb52-48ed-ae53-d664ad27066f
+        userCondition: null
+handle: support
+hasTitleField: false
+name: Support
+section: f6404666-341b-4af9-ad83-c96ed1be86fe # Support
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

@@ -8,5 +8,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _/karriere/index
-    uriFormat: karriere
+    uriFormat: unternehmen/karriere
 type: single

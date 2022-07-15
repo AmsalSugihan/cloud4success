@@ -1,0 +1,32 @@
+{% set jobs = craft.entries().section('karrierePost').all() %}
+
+<div class="jobs-section wf-section">
+    <div class="wrapper jobs-wrapper">
+        <div class="jobs-left">
+            <h6 class="subheading">Jobs</h6>
+            <h2 class="jobs-heading">Offene Posten</h2>
+            <div>Nichts passendes dabei? Einfach initiativ bewerben an: <a href="mailto:careers@bb.agency">karriere@cloud4success.de</a>
+            </div>
+        </div>
+        <div class="jobs-right">
+            {% for job in jobs %}
+                {% set detail = job.jobDetail %}
+                <a href="{{ job.url }}" class="job-item w-inline-block">
+                <div class="job-item-details">
+                    <h4 class="job-item-heading">{{ job.title }}</h4>
+                    <div class="job-dot-details">
+                        <div class="job-detail-text">{{ detail.location }}</div>
+                        <div class="job-dot"></div>
+                        <div class="job-detail-text">{{ detail.duration }}</div>
+                        <div class="job-dot"></div>
+                        <div class="job-detail-text">{{ detail.experience }}</div>
+                    </div>
+                    <div class="job-salary-range">
+                        <div class="job-detail-text">{{ detail.startDate | date("M d, Y") }}</div>
+                    </div>
+                </div><img src="{{siteUrl}}assets/images/Group-83.svg" loading="lazy" alt="" class="job-item-arrow">
+            </a>
+            {% endfor %}
+        </div>
+    </div>
+</div>

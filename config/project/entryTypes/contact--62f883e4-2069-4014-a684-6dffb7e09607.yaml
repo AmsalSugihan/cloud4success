@@ -1,0 +1,67 @@
+fieldLayouts:
+  a3b12cfa-93d8-4f91-b9dc-56e1f633cdff:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: fb3338ab-071d-4a4d-9a12-62ace503150e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 293cac4b-bd6e-4c92-98ca-eb719b885cda # Post Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e21a3561-690b-483d-a300-6dcf83b6680a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 907b94e8-b3cb-408b-a4ed-d497104b2d55 # Post Short Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 43524e20-4bd8-4555-9d93-90a31d97828f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a8a4d154-b5d2-44ba-b640-2974f068bfa9
+        userCondition: null
+handle: contact
+hasTitleField: false
+name: Contact
+section: d0c9a98d-03f6-4647-8c8d-4971d91c23b3 # Contact
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

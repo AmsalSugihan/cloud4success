@@ -1,0 +1,28 @@
+{% extends ("_/layout/customBase") %}
+
+{% block extend %}
+    <div class="overflow-hidden">
+        <div class="career-hero-section wf-section">
+            {% include ("_/layout/navigation/nav") %}
+            <div class="wrapper career-hero-wrapper">
+                <h6 data-w-id="73caeeed-7690-7548-d514-651915ec2783" style="-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="subheading">Karriere</h6>
+                <h1 data-w-id="20bf6bca-b934-f76f-5dd3-b2a3648f7e39" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="career-hero-heading">Werde Teil von etwas großem</h1>
+                <div data-w-id="9d09de52-9875-7fef-c1e2-884fa5073be5" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="_22-px">Wir sind die besseren. Remote-Work, Know-How und genügend Freiraum zum Machen.</div>
+            </div>
+        </div>
+
+        <div class="wrapper career-images-wrapper">
+            <div data-w-id="28ef5849-94d9-5902-21a4-6a35a05eec28" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="career-image-item"><img src="{{siteUrl}}assets/images/image_jobs1.jpg" loading="lazy" srcset="{{siteUrl}}assets/images/image_jobs1-p-500.jpeg 500w, {{siteUrl}}assets/images/image_jobs1-p-800.jpeg 800w, {{siteUrl}}assets/images/image_jobs1-p-1080.jpeg 1080w, {{siteUrl}}assets/images/image_jobs1.jpg 1240w" sizes="(max-width: 767px) 90vw, (max-width: 991px) 81vw, (max-width: 1919px) 42vw, 620px" alt="" class="image"></div>
+            <div data-w-id="7d6552c0-2d02-8b99-5a9f-4c76e814a028" style="opacity:0;-webkit-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 50px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="career-image-item"><img src="{{siteUrl}}assets/images/image_jobs2.jpg" loading="lazy" srcset="{{siteUrl}}assets/images/image_jobs2-p-500.jpeg 500w, {{siteUrl}}assets/images/image_jobs2-p-800.jpeg 800w, {{siteUrl}}assets/images/image_jobs2-p-1080.jpeg 1080w, {{siteUrl}}assets/images/image_jobs2.jpg 1240w" sizes="(max-width: 767px) 90vw, (max-width: 991px) 81vw, (max-width: 1919px) 42vw, 620px" alt="" class="image"></div>
+        </div>
+
+        {% include('_/components/jobSection') %}
+        {% include('_/components/perksSection') %}
+
+        {% include('_/components/ctaSection') %}
+
+        {% include ("_/layout/navigation/footer") %}
+        <div class="sticky-nav-div">{% include ("_/layout/navigation/nav") %}</div>
+    </div>
+
+{% endblock %}

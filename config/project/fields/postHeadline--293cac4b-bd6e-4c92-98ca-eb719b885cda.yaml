@@ -1,0 +1,19 @@
+columnSuffix: lffxpplo
+contentColumnType: text
+fieldGroup: dd2cab1f-d433-4267-bf6a-52fbb391b10f # Common
+handle: postHeadline
+instructions: null
+name: 'Post Headline'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

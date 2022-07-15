@@ -1,0 +1,212 @@
+field: 9b168937-c11f-4a7e-9741-f9d6aa77c9d0 # Job Detail
+fieldLayouts:
+  e4c1c0b9-a203-4b0e-8906-5fc16c1967d7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2855e71a-4ab6-45e5-b716-fe4cfc071f33 # Location
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: cf977ef4-f747-4645-9e08-165a57a92b0d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9583ec6a-d404-475a-8632-f57bf1d4aa04 # Duration
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5a56da0a-ce25-42f5-900e-678c8c4cee72
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 4c833b87-8963-49bf-b039-fb9029ebcfa6 # Experience
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4eac30d7-f370-4c57-b8e6-fe88a43a9f6b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e9361ffe-b7e5-47e5-b505-06837d3a9487 # Start Date
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b3e28a12-e01c-4729-9b2e-082f5ca51077
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 26f05fc1-ee8e-4be8-95cb-ee95fc0ba4ea # Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 696124f9-a166-4bfa-b533-84b1061b27ba
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 03393706-d426-43eb-82b8-7e1cc0e8bca8
+        userCondition: null
+fields:
+  4c833b87-8963-49bf-b039-fb9029ebcfa6: # Experience
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: experience
+    instructions: null
+    name: Experience
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  26f05fc1-ee8e-4be8-95cb-ee95fc0ba4ea: # Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: button
+    instructions: null
+    name: Button
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: 'Jetzt bewerben'
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  2855e71a-4ab6-45e5-b716-fe4cfc071f33: # Location
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: location
+    instructions: null
+    name: Location
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  9583ec6a-d404-475a-8632-f57bf1d4aa04: # Duration
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: duration
+    instructions: null
+    name: Duration
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  e9361ffe-b7e5-47e5-b505-06837d3a9487: # Start Date
+    columnSuffix: null
+    contentColumnType: datetime
+    fieldGroup: null
+    handle: startDate
+    instructions: null
+    name: 'Start Date'
+    searchable: false
+    settings:
+      max: null
+      min: null
+      minuteIncrement: 30
+      showDate: true
+      showTime: false
+      showTimeZone: false
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Date

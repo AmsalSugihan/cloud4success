@@ -1,0 +1,150 @@
+field: c969cea5-b5b1-408f-a797-8806df0c5402 # Post Banner
+fieldLayouts:
+  7dadae18-9197-4025-8595-dbb345ba800c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 7d14fb5f-7ea2-4695-95f7-923c9bbd3fb8 # Headline
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d1b9aeff-68de-445b-94b5-72744f7fee36
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 987bd29f-6646-4a74-958b-01ebb601675b # Short Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a0c15a39-4e27-442e-b869-ea895e9c6011
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 1d7dc4a5-fcb3-477b-93d2-0adc9b88ccb6 # Button Url
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46526c46-4a44-42c4-8fa4-07a3f529bad2
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: f3eed3e8-4faa-4106-b3cd-bb3a5265a2cc
+        userCondition: null
+fields:
+  1d7dc4a5-fcb3-477b-93d2-0adc9b88ccb6: # Button Url
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonUrl
+    instructions: null
+    name: 'Button Url'
+    searchable: false
+    settings:
+      allowCustomText: true
+      allowTarget: false
+      autoNoReferrer: false
+      customTextMaxLength: 0
+      customTextRequired: false
+      defaultLinkName: entry
+      defaultText: 'Jetzt lesen'
+      enableAllLinkTypes: false
+      enableAriaLabel: false
+      enableElementCache: false
+      enableTitle: false
+      typeSettings:
+        asset:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        category:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+        custom:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        email:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        entry:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: true
+          sources: '*'
+        site:
+          enabled: false
+          sites: '*'
+        tel:
+          allowAliases: false
+          disableValidation: false
+          enabled: false
+        url:
+          allowAliases: false
+          disableValidation: false
+          enabled: true
+        user:
+          allowCrossSiteLink: false
+          allowCustomQuery: false
+          enabled: false
+          sources: '*'
+    translationKeyFormat: null
+    translationMethod: none
+    type: lenz\linkfield\fields\LinkField
+  7d14fb5f-7ea2-4695-95f7-923c9bbd3fb8: # Headline
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: headline
+    instructions: null
+    name: Headline
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  987bd29f-6646-4a74-958b-01ebb601675b: # Short Text
+    columnSuffix: null
+    contentColumnType: text
+    fieldGroup: null
+    handle: shortText
+    instructions: null
+    name: 'Short Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText

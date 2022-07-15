@@ -8,5 +8,5 @@ siteSettings:
     enabledByDefault: true
     hasUrls: true
     template: _/software/index
-    uriFormat: software
+    uriFormat: m365-apps
 type: single

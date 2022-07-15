@@ -1,0 +1,34 @@
+{% set softwareList = craft.entries().section('softwarePost').limit(3).all() %}
+{% set defaultImg = craft.app.config.custom.defaultImgUrl %}
+
+<div class="most-popular-integration-section wf-section">
+  <div class="wrapper most-popular-integrations-wrapper">
+    <div class="most-popular-integrations-up">
+      <div class="most-popular-integrations-headings">
+        <h6 data-w-id="2d1faa5e-4d88-f056-ef0c-6edfb8ee947e" class="subheading">Mehr entdecken</h6>
+        <h2 data-w-id="2d1faa5e-4d88-f056-ef0c-6edfb8ee9480">Weitere Apps von Microsoft</h2>
+      </div>
+      <div data-w-id="2d1faa5e-4d88-f056-ef0c-6edfb8ee9484" style="opacity: 0" class="most-popular-integrations-text">
+        <div data-w-id="2d1faa5e-4d88-f056-ef0c-6edfb8ee9485">Microsoft 365 bietet für alle Anwendungen die richtigen Tools.</div>
+      </div>
+    </div>
+    <div data-w-id="2d1faa5e-4d88-f056-ef0c-6edfb8ee9487" class="most-integrations-down">
+      <div class="integration-collection">
+        {% for list in softwareList %}
+          {% set image = list.postImage.one() ? list.postImage.one().url : defaultImg %}
+          <div class="integration-item">
+            <a href="{{ list.url }}" class="integration-card most-popular w-inline-block">
+              <div class="integration-icon flex"><img src="{{ image }}" loading="lazy" alt="" class="integration-logo-small" /></div>
+              <h4 class="integration-item-heading">{{ list.title }}</h4>
+              <div>{{ list.postBanner.shortText }}</div>
+              <div class="integration-card-link">
+                <img src="{{siteUrl}}assets/images/Icon.svg" loading="lazy" width="13" alt="" class="integration-card-link-icon" />
+                <div>Mehr dazu</div>
+              </div>
+            </a>
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</div>
